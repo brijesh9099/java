@@ -1,0 +1,10 @@
+public class obj
+{
+	int x;
+	public static void main(String[]args)
+	{
+		obj Obj=new obj();
+		Obj.x=400;
+		System.out.println(Obj.x);
+	}
+}
