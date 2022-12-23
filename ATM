@@ -1,0 +1,110 @@
+import java.util.Scanner;  
+public class atm  
+{      
+    public static void main(String args[] )  
+    {      
+        int balance = 500000, withdraw, deposit;   
+        Scanner sc = new Scanner(System.in);  
+   
+        while(true)  
+        {  
+            System.out.println("Automated Teller Machine");  
+            System.out.println("Choose 1 for Withdraw");  
+            System.out.println("Choose 2 for Deposit");  
+            System.out.println("Choose 3 for Check Balance");  
+            System.out.println("Choose 4 for EXIT");  
+            System.out.print("Choose the operation you want to perform:");  
+       
+        
+            int choice = sc.nextInt();  
+            switch(choice)  
+            {  
+                case 1:  
+        System.out.print(" money withdrawn:");  
+                      
+        
+        withdraw = sc.nextInt();  
+                      
+        
+        if(balance >= withdraw)  
+        {  
+        
+            balance = balance - withdraw;  
+            System.out.println(" collect your money");  
+        }  
+        else  
+        {  
+        
+            System.out.println(" Balance");  
+        }  
+        System.out.println("");  
+        break;  
+   
+                case 2:  
+                      
+        System.out.print(" money deposited:");  
+                      
+        
+        deposit = sc.nextInt();  
+                      
+        
+        balance = balance + deposit;  
+        System.out.println("Your Money  is depsited");  
+        System.out.println("");  
+        break;  
+   
+                case 3:  
+        
+        System.out.println("Balance : "+balance);  
+        System.out.println("");  
+        break;  
+   
+                case 4:  
+          
+        System.exit(0);  
+            }  
+        }  
+    }  
+}  
+
+
+/*import java.util.Scanner;
+
+class atm 
+{
+  public static void main(String[] args)
+  {
+	
+	  
+Scanner myObj = new Scanner(System.in);
+    String userName;
+    
+    
+    System.out.println("Enter username"); 
+    userName = myObj.nextLine();   
+       
+    ystem.out.println("Username is: " + userName);
+		int h=harsh,t=tankariya;
+			if (h)
+				{
+					//System.out.println("h");
+				Scanner myObj = new Scanner(System.in);
+    String userName;
+    
+    
+    System.out.println("Enter username"); 
+    userName = myObj.nextLine();   
+       
+    System.out.println("Username is: " + userName);
+				} 
+				else if (t) 
+				{
+					System.out.println("t");
+				}
+			else 
+				{
+					System.out.println("name is not avelebale");
+				}
+	
+  }
+}*/
