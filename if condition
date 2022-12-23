@@ -1,0 +1,16 @@
+public class ifcon
+{
+  public static void main(String[] args) 
+  { 
+    int big = 25;
+    int small = 18;
+   
+    if (big <= small) 
+	{
+      System.out.println("big");
+    } else 
+	{
+      System.out.println("small");
+    }  
+  }
+}
