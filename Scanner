@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+class scanner 
+{
+  public static void main(String[] args)
+  {
+    Scanner myObj = new Scanner(System.in);
+    String userName;
+    
+    // Enter username and press Enter
+    System.out.println("Enter username"); 
+    userName = myObj.nextLine();   
+       
+    System.out.println("Username is: " + userName);        
+  }
+}
+
+/*import java.util.Scanner;
+class scanner
+{
+	public static void main(String[]args)
+	{
+		scanner myObj =new scanner(System.in);
+		String name;
+		
+		System.out.print("enter name");
+		name = myObj.nextLine();  
+		System.out.print("name is "+name);
+	}
+}*/
