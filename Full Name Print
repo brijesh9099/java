@@ -1,0 +1,22 @@
+import java.until.scanner; 
+class A
+{
+	public static void main(string[]args)
+	{
+		String fname;
+		String mname;
+		String lname;
+		scanner s1=new scanner(System.in);
+		system.out.println("enter your fname");
+		fname=s1.nextLine();
+		system.out.println("enter your mname");
+		fname=s1.nextLine();
+		system.out.println("enter your lname");
+		fname=s1.nextLine();
+		A a1=new A(fname,mname,lname);
+	}	
+	A(String fname,String mname,String lname)
+	{
+		system.out.println("full name"+fname+""+mname+""+lname);
+	}
+}
