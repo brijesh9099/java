@@ -1,0 +1,10 @@
+class oddeven
+{
+	public static void main(String [] args){
+		int a = 100;
+		int b = a % 2;
+		String Ans = b==0 ? "Even" : "Odd";
+		
+		System.out.println(Ans);
+	}
+}
