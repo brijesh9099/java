@@ -1,0 +1,16 @@
+public class number
+{
+	public static void main(String[]args)
+	{
+		int n=100;
+		float f=10.10f;
+		String c="brijesh";
+		char d='a';
+		
+		System.out.println(n);
+		System.out.println(f);
+		System.out.println(c);
+		System.out.println(d);
+		System.out.println(c + n);
+	}
+}
