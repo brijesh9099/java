@@ -1,0 +1,24 @@
+public class sfunction
+{
+	public static void main(String[]args)
+	{
+		String name="brijesh";
+		String nm1="chudasama";
+		String nm2="Brijesh";
+		int x=10;
+		int y=20;
+		int z=x+y;
+		int A=10;
+		int B=20;
+		System.out.println(name);
+		System.out.println("total character:" + name.length());
+		System.out.println("total character:" + name.toUpperCase());
+		System.out.println("total character:" + name.toLowerCase());
+		System.out.println("total character:" + name.indexOf("harsh"));
+		System.out.println(nm1+" "+nm2);
+		System.out.println(z);
+		System.out.println(A+" "+B);
+	}
+}
+
+
