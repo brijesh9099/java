@@ -1,0 +1,81 @@
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+public class bb1{
+	public static void main(String [] args){
+		JFrame f = new JFrame("dude");
+		JLabel l1 = new JLabel("Enter Values");
+		l1.setBounds(50,30,150,20);
+		JTextField tf1 = new JTextField();
+		tf1.setBounds(50,70,150,20);
+		JTextField tf2 = new JTextField();
+		tf2.setBounds(50,90,150,20);
+		JTextField tf3 = new JTextField();
+		tf3.setBounds(50,110,150,20);
+		tf3.setEditable(false);
+		JButton b = new JButton("+");		
+		b.setBounds(50,150,50,50);
+		JButton b1 = new JButton("-");		
+		b1.setBounds(110,150,50,50);
+		JButton b2 = new JButton("*");		
+		b2.setBounds(50,200,50,50);
+		JButton b3 = new JButton("/");		
+		b3.setBounds(110,200,50,50);
+		b.addActionListener(new ActionListener(){
+		public void actionPerformed(ActionEvent e){
+			String s1 = tf1.getText();
+			String s2 = tf2.getText();
+			int a = Integer.parseInt(s1);
+			int b = Integer.parseInt(s2);
+			int c = a+b;
+			String s3 = String.valueOf(c);
+			tf3.setText(s3);
+		}
+		});
+		b1.addActionListener(new ActionListener(){
+		public void actionPerformed(ActionEvent e){
+			String s1 = tf1.getText();
+			String s2 = tf2.getText();
+			int a = Integer.parseInt(s1);
+			int b = Integer.parseInt(s2);
+			int c = a-b;
+			String s3 = String.valueOf(c);
+			tf3.setText(s3);
+		}
+		});
+			b2.addActionListener(new ActionListener(){
+		public void actionPerformed(ActionEvent e){
+			String s1 = tf1.getText();
+			String s2 = tf2.getText();
+			int a = Integer.parseInt(s1);
+			int b = Integer.parseInt(s2);
+			int c = a*b;
+			String s3 = String.valueOf(c);
+			tf3.setText(s3);
+		}
+		});
+		b3.addActionListener(new ActionListener(){
+		public void actionPerformed(ActionEvent e){
+			String s1 = tf1.getText();
+			String s2 = tf2.getText();
+			int a = Integer.parseInt(s1);
+			int b = Integer.parseInt(s2);
+			int c = a/b;
+			String s3 = String.valueOf(c);
+			tf3.setText(s3);
+		}
+		});
+		f.add(l1);
+		f.add(tf1);
+		f.add(b);
+		f.add(b1);
+		f.add(b2);
+		f.add(b3);
+		f.add(tf2);
+		f.add(tf3);
+		f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		f.setSize(300,300);  
+		f.setLayout(null);  
+        f.setVisible(true);  
+	}
+}
